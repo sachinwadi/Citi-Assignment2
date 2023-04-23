@@ -134,27 +134,27 @@ public class TransactionAnalysisService {
         );
 
         List<Transaction> transactions2021 = List.of(
-                new Transaction(LocalDate.of(2021, 1, 1), "Morrisons", "card", 10.40, "plumber"),
-                new Transaction(LocalDate.of(2021, 2, 28), "CYBG", "direct debit", 600.00, "HVAC"),
-                new Transaction(LocalDate.of(2021, 2, 28), "PureGym", "direct debit", 40.00, "MyMonthlyDD"),
-                new Transaction(LocalDate.of(2021, 3, 1), "M&S", "card", 5.99, "Groceries"),
-                new Transaction(LocalDate.of(2021, 4, 30), "McMillan", "internet", 10.00, "plumber")
+                new Transaction(LocalDate.of(2021, 1, 1), "Morrisons", "card", 13.20, "plumber"),
+                new Transaction(LocalDate.of(2021, 2, 28), "CYBG", "direct debit", 500.40, "HVAC"),
+                new Transaction(LocalDate.of(2021, 2, 28), "PureGym", "direct debit", 50.00, "MyMonthlyDD"),
+                new Transaction(LocalDate.of(2021, 3, 1), "M&S", "card", 7.45, "Groceries"),
+                new Transaction(LocalDate.of(2021, 4, 30), "McMillan", "internet", 16.00, "plumber")
         );
 
         List<Transaction> transactions2022 = List.of(
-                new Transaction(LocalDate.of(2022, 5, 1), "Morrisons", "card", 10.40, "Groceries"),
-                new Transaction(LocalDate.of(2022, 5, 28), "CYBG", "direct debit", 600.00, "rent"),
-                new Transaction(LocalDate.of(2022, 6, 28), "PureGym", "direct debit", 40.00, "medicine"),
-                new Transaction(LocalDate.of(2022, 8, 1), "M&S", "card", 5.99, "doctor"),
-                new Transaction(LocalDate.of(2022, 9, 30), "McMillan", "internet", 10.00, "medicine")
+                new Transaction(LocalDate.of(2022, 5, 1), "Morrisons", "card", 29.40, "Groceries"),
+                new Transaction(LocalDate.of(2022, 5, 28), "CYBG", "direct debit", 75.00, "Groceries"),
+                new Transaction(LocalDate.of(2022, 6, 28), "PureGym", "direct debit", 575.00, "rent"),
+                new Transaction(LocalDate.of(2022, 8, 1), "M&S", "card", 12.89, "doctor"),
+                new Transaction(LocalDate.of(2022, 9, 30), "McMillan", "internet", 76.80, "medicine")
         );
 
         List<Transaction> transactions2023 = List.of(
-                new Transaction(LocalDate.of(2023, 5, 1), "Morrisons", "card", 10.40, "Groceries"),
-                new Transaction(LocalDate.of(2023, 7, 28), "CYBG", "direct debit", 600.00, "rent"),
-                new Transaction(LocalDate.of(2023, 7, 28), "PureGym", "direct debit", 40.00, "MyMonthlyDD"),
-                new Transaction(LocalDate.of(2023, 8, 1), "M&S", "card", 5.99, "doctor"),
-                new Transaction(LocalDate.of(2023, 10, 30), "McMillan", "internet", 10.00, "Groceries")
+                new Transaction(LocalDate.of(2023, 5, 1), "Morrisons", "card", 45.40, "Groceries"),
+                new Transaction(LocalDate.of(2023, 7, 28), "CYBG", "direct debit", 455.00, "rent"),
+                new Transaction(LocalDate.of(2023, 7, 28), "PureGym", "direct debit", 56.00, "MyMonthlyDD"),
+                new Transaction(LocalDate.of(2023, 8, 1), "M&S", "card", 9.80, "doctor"),
+                new Transaction(LocalDate.of(2023, 10, 30), "McMillan", "internet", 17.70, "doctor")
         );
 
         Stream.of(transactions2020, transactions2021, transactions2022, transactions2023).forEach(collectiveData::addAll);
